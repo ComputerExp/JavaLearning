@@ -1,4 +1,4 @@
-package com.sriman.dsa.stack;
+package com.srimannr.dsa.stack;
 
 import java.util.EmptyStackException;
 
@@ -17,11 +17,17 @@ class StackArr implements Stack {
 	public StackArr(){
 		this(DEFAULT_SIZE);
 	}
+	{
+		top = -1;
+	}
+	/*
+	 *  Throws Runtime Exception when size is negative
+	 *  Else it initialises the stack with the appropriate size
+	 * */
 	public StackArr(int size){
 		if (size <= 0) {
 			throw new IllegalArgumentException("Stack size must be greater than 0");
 		}
-		top = -1;
 		this.size = size;
 		stack = new int[size];
 	}
@@ -74,7 +80,9 @@ public class StackMain {
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
 		try {
-			System.out.println(stack.pop());//throws runtime error
+			System.out.println(stack.pop());
+			//throws runtime error. It is an unchecked exception and should not be handled.
+			//Doing this for experimental purposes
 		}catch(EmptyStackException e){
 			System.out.println("Stack is empty\nEmpty Stack Exception thrown");
 		}

@@ -1,4 +1,4 @@
-package com.sriman.hackerrank.java;
+package com.srimannr.hackerrank.java;
 
 import java.util.*;
 

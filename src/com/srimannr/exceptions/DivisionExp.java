@@ -1,4 +1,4 @@
-package com.sriman.exceptions;
+package com.srimannr.exceptions;
 
 import java.util.Scanner;
 

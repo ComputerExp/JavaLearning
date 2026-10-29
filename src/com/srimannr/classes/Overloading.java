@@ -1,4 +1,4 @@
-package com.sriman.classes;
+package com.srimannr.classes;
 
 class SearchUtil{
 	public static int search(int[] arr, int ele, int pos){
