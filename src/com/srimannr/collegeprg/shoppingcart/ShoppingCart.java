@@ -37,19 +37,22 @@ public class ShoppingCart {
 
                     System.out.print("Enter Price: ");
                     double price = sc.nextDouble();
+                    sc.nextLine();
                     cart.add(new Product(id, name, price));
                     System.out.println("Product added!");
                     break;
                 case 2:
                     System.out.print("Enter Product ID to remove: ");
                     int rid = sc.nextInt();
+                    sc.nextLine();
                     cart.removeIf(p -> p.id == rid);
                     System.out.println("Product removed if existed.");
                     break;
                 case 3:
                     System.out.println("--- Products in Cart---");
-                    for (Product p : cart)
-                        System.out.println(p);
+                    cart.forEach(p -> System.out.println(p));
+//                    for (Product p : cart)
+//                        System.out.println(p);
                     break;
                 case 4:
                     cart.sort(Comparator.comparing(p -> p.name));
@@ -62,6 +65,7 @@ public class ShoppingCart {
                 case 6:
                     System.out.print("Enter Product ID to search: ");
                     int sid = sc.nextInt();
+                    sc.nextLine();
                     for (Product p : cart) {
                         if (p.id == sid) {
                             System.out.println("Found: " + p);
