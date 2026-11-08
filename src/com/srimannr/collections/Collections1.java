@@ -8,7 +8,7 @@ import java.util.TreeSet;
 public class Collections1 {
     static void main(String[] args) {
         int[] a = {2,2,3,4,5,5,1};
-        TreeSet<Integer> hs = new TreeSet<>();
+        LinkedHashSet<Integer> hs = new LinkedHashSet<>();
 //        HashSet<Integer> hs = new HashSet<>();
 //        TreeSet<Integer> hs = new TreeSet<>();
 
