@@ -50,7 +50,7 @@ public class ShoppingCart {
                     break;
                 case 3:
                     System.out.println("--- Products in Cart---");
-                    cart.forEach(p -> System.out.println(p));
+                    cart.forEach(System.out::println);
 //                    for (Product p : cart)
 //                        System.out.println(p);
                     break;
