@@ -3,7 +3,7 @@ package com.srimannr.collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Collection2Maps {
+public class Collections2Maps {
     static void main(String[] args) {
         HashMap<String,Integer> hmp = new HashMap<>();
         System.out.println("Enter the number of items");
